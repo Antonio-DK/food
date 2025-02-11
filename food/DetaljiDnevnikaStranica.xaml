@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="food.DetaljiDnevnikaStranica"
+             BackgroundColor="#22223B">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Entry x:Name="NaslovUnos"
+                   TextColor="White"
+                   BackgroundColor="#4A4E69"
+                   FontSize="24"/>
+            <Label x:Name="DatumOznaka"
+                   TextColor="White"
+                   FontSize="14"/>
+            <Editor x:Name="OpisEditor"
+                    TextColor="White"
+                    BackgroundColor="#4A4E69"
+                    HeightRequest="150"/>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="10">
+                <Button Text="Spremi promjene"
+                        BackgroundColor="#9A8C98"
+                        TextColor="White"
+                        Clicked="OnSpremiPromjeneClicked"/>
+                <Button Text="Obriši"
+                        BackgroundColor="#9A8C98"
+                        TextColor="White"
+                        Clicked="OnObrisiClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

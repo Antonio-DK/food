@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="food.DodajDnevnikStranica"
+             BackgroundColor="#22223B">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Entry x:Name="NaslovUnos"
+                   Placeholder="Naziv dnevnika"
+                   TextColor="White"
+                   BackgroundColor="#4A4E69"/>
+            <Editor x:Name="OpisEditor"
+                    Placeholder="Opis dnevnika"
+                    TextColor="White"
+                    BackgroundColor="#4A4E69"
+                    HeightRequest="100"/>
+            <Button Text="Spremi dnevnik"
+                    BackgroundColor="#9A8C98"
+                    TextColor="White"
+                    Clicked="OnSpremiDnevnikClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
